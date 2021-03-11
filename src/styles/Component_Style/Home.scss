@@ -1,0 +1,105 @@
+#Home
+{
+    background-image: url('../../Assets/image/quizebackgroung.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+   
+    section
+    {
+        background-color:rgba(0,0,0,0.7);
+        width: 25%;
+        height: 85%;
+        margin-top: 3%;
+        padding-left: $md;
+        padding-right:$md;
+        border-radius: 5px;
+    }
+    .cubestyle
+    {
+        text-align: center;
+    }
+    .cube
+    {
+        font-size: 8rem;
+        color:$orange; 
+    }
+    h1
+    {
+        font-family: $quicksand;
+        font-size: $lg;
+        text-align: center;
+        color:$off-white;
+        margin-top: 0;
+    }
+    .play-button-container
+    {
+        width: 100%;
+        .play-Button
+        {
+          background-color: $green;
+          display: block;
+          border-radius: $button-radius;
+          color:white;
+          cursor: pointer;
+          padding:$normal;
+          padding: 0.7rem;
+          text-align: center;
+          transition: 0.3s linear all;
+          margin-top: $lg;
+        }
+        .play-Button:hover
+        {
+            background-color: darken($green,15);
+        }
+    }
+    .auth-container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: $md;
+    }
+    #login-button
+    {
+        background-color: red;
+        transition: 0.3s linear all;
+    }
+    #login-button:hover{
+        background-color: darken($red,15);
+    }
+    #Signup-button
+    {
+        background-color: $blue;
+        transition: 0.3s linear all;
+    }
+    #Signup-button:hover
+    {
+        background-color: darken($blue,15);
+    }
+ 
+    .auth-container .auth-Button
+    {
+        color: #fff;
+        cursor: pointer;
+        border-radius: 30px;
+        // padding: $normal 0;
+        padding: 0.7rem;
+        text-align: center;
+        width: 45%;
+    }
+ 
+    @media (max-width:$md-breakpoint)
+    {
+        background-image: none;
+      section {
+            padding: 0 $normal;
+            height: 100%;
+            width: 80%;
+        }
+   }
+   
+}
